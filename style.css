@@ -1,0 +1,130 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+    margin: 0px;
+}
+
+.header{
+    background-color: black;
+    display: flex;
+    max-width: 90%;
+    color: aqua;
+    font-size: larger;
+    font-weight: bolder;
+    align-items: center;
+    margin: 0px;
+}
+
+.header h1{
+    background-color: black;
+    font-size: 50pt;
+    color: aqua;
+    margin: 0px;
+    font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation: 
+    typing 5.5s steps(30, end), /*how many steps it takes to produce font*/
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: aqua }
+}
+
+}
+
+
+
+.header > *{
+    flex-basis: 100%;
+    border: 10px solid aqua;
+}
+
+.header .image{
+    max-width: 250px;
+    max-height: 250px;
+    opacity: 0;
+  -moz-transition: opacity 2s 5s;  /* Firefox 4 */
+  -webkit-transition: opacity 2s 5s; /* Safari and Chrome */
+  -o-transition: opacity 2s 5s;
+  transition: opacity 2s 5s;
+}
+
+.image img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.section{
+    background-color: black;
+    max-width: 90%;
+    display:flex;
+    flex-direction: row;
+    color: aqua;
+    margin-top: 20px;
+}
+
+
+.column{
+    flex-basis:100%;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.column_spin{
+    flex-basis: 100%; /*can remove this for different effect*/
+    background-color: aqua;
+    color:black;
+    font-size: 20pt;
+    background-color: none;
+    animation-name: spin;
+    animation-duration: 7000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear; 
+    /* transform: rotate(3deg); */
+     /* transform: rotate(0.3rad);/ */
+     /* transform: rotate(3grad); */ 
+     /* transform: rotate(.03turn);  */
+  }
+  
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
+
+  ul li{
+      font-size: 20pt;
+      margin-bottom: 10px;
+      color:aqua;
+  }
+
+  .project{
+      display: flex;
+      flex-basis:100%;
+      max-height: 100px;
+  }
+
