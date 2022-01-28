@@ -224,6 +224,8 @@ button:hover{background-color: blue;
 
 .section2{
     background-color: black;
+    flex-basis: 100%;
+    
 
 }
 
@@ -239,7 +241,7 @@ button:hover{background-color: blue;
 .section1 >*{
         text-align: center;
         flex-basis:100%;
-    margin: 10px;
+        margin: 10px;
     }
 
 
