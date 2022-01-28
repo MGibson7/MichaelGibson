@@ -77,19 +77,23 @@ body{
     display:flex;
     flex-direction: row;
     color: aqua;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 
 .column{
     flex-basis:100%;
-    margin: 10px;
+    margin: 0x;
     margin-bottom: 0px;
+    border-right: 10px solid aqua;
 }
 
 .column_head{
+    margin-top: 10px;
     background-color: aqua;
     color: black;
+    text-shadow: 2px 2px white;
+
 }
 
 .column_spin{
@@ -176,10 +180,29 @@ button:hover{background-color: aqua;
     font-size: smaller;
 }
 
-.job p:hover{
+.job p:hover, .cert p:hover{
     text-decoration: underline;
 }
 
-.career h2{
+.career h2, .skills h2, .education h2{
     text-decoration: underline;
+}
+
+.education{
+    background-color: aqua;
+    color: black;
+}
+
+.education li{
+    text-align: left;
+    color: black;
+}
+
+.cert, .cert li{
+    color:black;
+}
+
+.skills li{
+    display: inline-block;
+    margin-left: 5px;
 }
