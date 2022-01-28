@@ -94,7 +94,7 @@ body{
 
 .column_head1{
     background-color: aqua;
-    color:blue;
+    color:black;
     border: 3px solid blue;
 }
 
@@ -151,6 +151,7 @@ body{
   .image img{
     max-width: 80%;
     max-height: 80%;
+    margin-bottom: 5px;
 }
 
 .project1{
@@ -222,8 +223,23 @@ button:hover{background-color: blue;
 }
 
 .section2{
-    background-color: blue;
+    background-color: black;
 
 }
+
+
+
+.section1{
+        display: flex;
+        flex-basis:100%;
+        align-content:left;
+        max-height: 200px;
+    }
+  
+.section1 >*{
+        text-align: center;
+        flex-basis:100%;
+    margin: 10px;
+    }
 
 
