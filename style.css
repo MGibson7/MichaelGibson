@@ -20,7 +20,7 @@ body{
     font-size: larger;
     font-weight: bolder;
     align-items: center;
-    margin: 0px;
+    margin: 10px;
 }
 
 .header h1{
@@ -28,8 +28,7 @@ body{
     padding-left: 5px;
     padding-right: 5px;
     font-size: 50pt;
-    color: aqua;
-    margin: 0px;
+    color: blue;
     font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
@@ -74,7 +73,7 @@ body{
 
 
 .section{
-    background-color: black;
+    background-color: aqua;
     max-width: 90%;
     display:flex;
     flex-direction: row;
@@ -87,16 +86,18 @@ body{
     flex-basis:100%;
     margin: 0x;
     margin-bottom: 0px;
-    border-right: 10px solid aqua;
-    border-left: 10px solid aqua;
 }
 
-.column_head{
-    margin-top: 10px;
+
+
+.column_head1{
+    background-color: blue;
+    color:aqua;
+}
+
+.column_head2{
     background-color: aqua;
     color: black;
-    text-shadow: 2px 2px white;
-
 }
 
 .column_spin{
@@ -159,7 +160,12 @@ body{
     order: 1;
 }
 
-button:hover{background-color: aqua;
+button{
+    background-color: aqua;
+}
+
+button:hover{background-color: blue;
+    color: aqua;
     font-style: bold;
     transform: scale(1.2);
     cursor: pointer;
@@ -191,12 +197,12 @@ button:hover{background-color: aqua;
     text-decoration: underline;
 }
 
-.education{
+.education, .skills, .career{
     background-color: aqua;
     color: black;
 }
 
-.education li{
+.career li, .education li{
     text-align: left;
     color: black;
 }
@@ -208,4 +214,9 @@ button:hover{background-color: aqua;
 .skills li{
     display: inline-block;
     margin-left: 5px;
+    color:black;
+}
+
+.section2{
+    background-color: blue;
 }
