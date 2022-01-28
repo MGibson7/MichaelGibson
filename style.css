@@ -86,6 +86,7 @@ body{
     margin: 0x;
     margin-bottom: 0px;
     border-right: 10px solid aqua;
+    border-left: 10px solid aqua;
 }
 
 .column_head{
