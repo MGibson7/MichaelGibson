@@ -91,13 +91,15 @@ body{
 
 
 .column_head1{
-    background-color: blue;
-    color:aqua;
+    background-color: aqua;
+    color:blue;
+    border: 3px solid blue;
 }
 
 .column_head2{
-    background-color: aqua;
-    color: black;
+    background-color: blue;
+    color: aqua;
+    border: 3px solid aqua;
 }
 
 .column_spin{
@@ -219,4 +221,9 @@ button:hover{background-color: blue;
 
 .section2{
     background-color: blue;
+    border: 3px solid aqua;
+}
+
+.section1{
+    border: 3px solid blue;
 }
