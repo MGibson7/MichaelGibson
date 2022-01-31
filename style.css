@@ -290,7 +290,7 @@ button:hover{background-color: aqua;
     position: absolute;
     content: attr(title);
     display: inline-block;
-    left: 20px;
+    left: 0px;
     top: 0px;
     padding: 5px;
     background-color: burlywood;
