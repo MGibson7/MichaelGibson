@@ -152,6 +152,7 @@ body{
     max-width: 80%;
     max-height: 80%;
     margin-bottom: 5px;
+    position: relative;
 }
 
 .project1{
@@ -250,6 +251,40 @@ button:hover{background-color: aqua;
     cursor: pointer;
 }
 
+.uncw:hover:after {
+    position: absolute;
+    content: attr(title);
+    display: inline-block;
+    left: 0px;
+    top: 0px;
+    padding: 5px;
+    background-color: teal;
+    color: black;
+}
+
+.ac:hover:after{
+    position: absolute;
+    content: attr(title);
+    display: inline-block;
+    left: 20px;
+    top: 0px;
+    padding: 5px;
+    background-color: lightskyblue;
+    color: blue;
+
+}
+
+.google:hover:after{
+    position: absolute;
+    content: attr(title);
+    display: inline-block;
+    left: 20px;
+    top: 0px;
+    padding: 5px;
+    background-color: red;
+    color: yellow;
+
+}
 
 
 
