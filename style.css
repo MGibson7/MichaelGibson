@@ -309,27 +309,35 @@ button:hover{background-color: aqua;
     order: 2;
 }
 .ffltechinvoice{
-    order: 4;
-}
-.jittextalerts{
     order: 5;
 }
-.acsql{
-    order: 7;
+.jittextalerts{
+    order: 6;
 }
-
-.viasatsql{
+.acsql{
     order: 8;
 }
 
+.viasatsql{
+    order: 9;
+}
+
 .viasataddcontact{
-    order: 6;
+    order: 7;
 }
 
 .stockcorr{
-    order: 3
+    order: 4
 }
 
 .ultimatefire{
-    order:9
+    order:10
+}
+
+.dkfootball{
+    order: 11
+}
+
+.viasatmoving{
+    order: 3
 }
