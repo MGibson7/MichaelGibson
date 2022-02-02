@@ -34,7 +34,7 @@ body{
     color: white;
     font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  /*border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .10em; /* Adjust as needed */
@@ -50,10 +50,10 @@ body{
 }
 
 /* The typewriter cursor effect */
-@keyframes blink-caret {
+/*@keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: blue }
-}
+}*/
 
 }
 
@@ -156,16 +156,6 @@ body{
     position: relative;
 }
 
-.project1{
-    order: 3;
-}
-.project2{
-    order: 2;
-}
-
-.project3{
-    order: 1;
-}
 
 button{
     background-color: blue;
@@ -230,6 +220,12 @@ button:hover{background-color: aqua;
     flex-basis: 100%;
     color: black;
     
+
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -301,5 +297,35 @@ button:hover{background-color: aqua;
 
 
 
+.career1, .project1{
+    text-decoration: underline;
+    font-size: 15pt;
+}
 
+.project1{
+    order: 1;
+}
+.alltimefantasy{
+    order: 2;
+}
+.ffltechinvoice{
+    order: 4;
+}
+.jittextalerts{
+    order: 5;
+}
+.acsql{
+    order: 7;
+}
 
+.viasatsql{
+    order: 8;
+}
+
+.viasataddcontact{
+    order: 6;
+}
+
+.stockcorr{
+    order: 3
+}
