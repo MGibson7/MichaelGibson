@@ -370,6 +370,11 @@ button:hover{background-color: aqua;
     to {background-image: url(./img/googledata.jpg); background-position: right; background-repeat: no-repeat; background-size: contain; background-color: yellow;}
   }
 
+  @keyframes backgroundchangeodin {
+    from {background-color: goldenrod;}
+    to { background-color: goldenrod;}
+  }
+
 
 .career2:hover{
     animation-name: backgroundchangeac;
@@ -385,6 +390,13 @@ button:hover{background-color: aqua;
 
 .career4:hover{
     animation-name: backgroundchangegoog;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+.career5:hover{
+    animation-name: backgroundchangeodin;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
