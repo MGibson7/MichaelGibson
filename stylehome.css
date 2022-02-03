@@ -1,0 +1,53 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+.container{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.section1, .section2{
+    text-align: center;
+    flex-basis: 100%;
+    margin: 10px;
+}
+
+.section1{
+    background-color: black;
+}
+
+
+.projectimg{
+    display: flex;
+    flex-direction: row;
+}
+
+.projectimg img{
+    flex-basis: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    
+    
+}
+
+.section1 .projectimg img{
+    --duration: 40s;
+    --name: float-up-1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33vw;
+    transform: translateY(200vh);
+    animation: var(--name) var(--duration) linear infinite;
+    box-shadow: 1px 3px 15px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+

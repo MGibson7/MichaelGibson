@@ -6,14 +6,33 @@ html{
     box-sizing: inherit;
 }
 
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); background-color: black; }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); background-color: aqua; }
+    20% { transform: translate(-3px, 0px) rotate(1deg); background-color: red; }
+    30% { transform: translate(3px, 2px) rotate(0deg); background-color: limegreen;}
+    40% { transform: translate(1px, -1px) rotate(1deg); background-color: yellow;}
+    50% { transform: translate(-1px, 2px) rotate(-1deg); background-color: orange; }
+    60% { transform: translate(-3px, 1px) rotate(0deg); background-color: grey;}
+    70% { transform: translate(3px, 1px) rotate(-1deg); background-color: skyblue;}
+    80% { transform: translate(-1px, -1px) rotate(1deg);background-color: rebeccapurple; }
+    90% { transform: translate(1px, 2px) rotate(0deg); background-color: fuchsia;}
+    100% { transform: translate(1px, -2px) rotate(-1deg); background-color: khaki;}
+  }
+
+
+
+
 body{
-    background-color: black;
+    background-color: blue;
     text-align: center;
     margin: 0px;
+    animation-name: backgroundchange;
+    animation-duration: 10s;
 }
 
 .header{
-    background-color: black;
+    background-color: none;
     background-size: contain;
     background-blend-mode: luminosity;
     display: flex;
@@ -24,6 +43,21 @@ body{
     align-items: center;
     margin: 15px;
 }
+
+.header img{max-width: 250px;
+    max-height: 250px;
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: 0; 
+
+}
+
+.header:hover{
+    animation-name: shake;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
 
 .header h1{
     background-color: none;
@@ -94,42 +128,20 @@ body{
 
 
 
+
 .column_head1{
     background-color: aqua;
     color:black;
-    border: 3px solid blue;
+    border: 3px solid black;
 }
 
 .column_head2{
-    background-color: blue;
+    background-color: black;
     color: aqua;
     border: 3px solid aqua;
 }
 
-.column_spin{
-    flex-basis: 100%; /*can remove this for different effect*/
-    background-color: aqua;
-    color:black;
-    font-size: 20pt;
-    background-color: none;
-    animation-name: spin;
-    animation-duration: 7000ms;
-    animation-iteration-count: 1;
-    animation-timing-function: linear; 
-    /* transform: rotate(3deg); */
-     /* transform: rotate(0.3rad);/ */
-     /* transform: rotate(3grad); */ 
-     /* transform: rotate(.03turn);  */
-  }
-  
-  @keyframes spin {
-      from {
-          transform:rotate(0deg);
-      }
-      to {
-          transform:rotate(360deg);
-      }
-  }
+
 
   ul li{
       font-size: 20pt;
@@ -227,10 +239,11 @@ button:hover{background-color: aqua;
     display: flex;
     flex-direction: column;
 
+
 }
 
 .section1{
-    background-color: blue;
+    background-color: black;
     color: aqua;
 }
 
