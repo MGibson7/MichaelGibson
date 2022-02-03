@@ -20,6 +20,7 @@ html{
     100% { transform: translate(1px, -2px) rotate(-1deg); background-color: khaki;}
   }
 
+  
 
 
 
@@ -27,8 +28,7 @@ body{
     background-color: blue;
     text-align: center;
     margin: 0px;
-    animation-name: backgroundchange;
-    animation-duration: 10s;
+    color:white;
 }
 
 .header{
@@ -44,8 +44,8 @@ body{
     margin: 15px;
 }
 
-.header img{max-width: 250px;
-    max-height: 250px;
+.header img{max-width: 150px;
+    max-height: 150px;
     animation-name: shake;
     animation-duration: 0.5s;
     animation-iteration-count: 0; 
@@ -353,4 +353,38 @@ button:hover{background-color: aqua;
 
 .viasatmoving{
     order: 3
+}
+
+@keyframes backgroundchangeuncw {
+    from {background-image: url(./img/UNCWMGLW.jpg); background-position: right; background-repeat: no-repeat; background-size: contain; background-color: teal;}
+    to {background-image: url(./img/uncwintr.jpg); background-position: right; background-repeat: no-repeat; background-size: contain; background-color: teal;}
+  }
+
+@keyframes backgroundchangeac {
+    from {background-image: url(./img/GophoneChamp.jpg); background-position: right; background-repeat: no-repeat; background-size: contain; background-color: red;}
+    to {background-image: url(./img/GophoneChamp.jpg); background-position: right; background-repeat: no-repeat; background-size: contain; background-color: red;}
+  }
+
+  @keyframes backgroundchangegoog {
+    from {background-image: url(./img/googledata.jpg); background-position: right; background-repeat: no-repeat; background-size: contain; background-color: yellow;}
+    to {background-image: url(./img/googledata.jpg); background-position: right; background-repeat: no-repeat; background-size: contain; background-color: yellow;}
+  }
+
+
+.career2:hover{
+    animation-name: backgroundchangeac;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.career3:hover{
+    animation-name: backgroundchangeuncw;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.career4:hover{
+    animation-name: backgroundchangegoog;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
