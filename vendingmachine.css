@@ -1,0 +1,37 @@
+html{
+box-sizing: border-box;
+}
+
+*, *::before, *::after{
+box-sizing: inherit;
+}
+/*Giving vending outline its properties*/
+.vendingoutline{
+    max-width: 100%;
+    max-height: 100%;
+    border: 25px solid black;
+    flex-basis: 100%;
+
+}
+.vendingglassrow{
+    max-width: 100%;
+    max-height: 100%;
+    background-color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.vendingitem{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.vendingitem img{
+    max-width: 80%;
+    max-height: 70%;
+    margin-bottom: 5px;
+    position: relative;
+}
+
