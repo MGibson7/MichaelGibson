@@ -1,0 +1,97 @@
+html{
+    box-sizing: border-box;
+    }
+    
+    *, *::before, *::after{
+    box-sizing: inherit;
+    }
+
+body{
+    background-color: black;
+    color: white;
+    margin: 10px;
+}
+
+#container{
+    display: flex;
+    max-width: 100%;
+}
+
+#header{
+    text-align: center;
+}
+
+#resume{
+    background-image: linear-gradient(green
+    , black);
+    flex-basis: 100%;
+    padding: 10px;
+
+}
+
+#projects{
+    background-color: rgba(255, 255, 255, 0.5);
+    flex-basis: 100%;
+    backdrop-filter: blur(10px) saturate(100%) contrast(55%) brightness(130%);
+    
+}
+
+
+
+.row{
+    display: flex;
+    align-content: center;
+}
+
+.header{
+    text-align: center;
+    padding: 17px;
+
+}
+
+.header2{
+    background-color: gray;
+}
+
+h2{
+    text-align: center;
+}
+
+.avatar{
+    flex-basis: 100%;
+    max-width: 100%;
+    border: 10px solid green;
+    text-align: center;
+}
+
+.projectitem{
+    flex-basis: 100%;
+    display: flex;
+    text-align: center;
+
+}
+
+.avatar img{
+    max-width: 80%;
+}
+
+.projectitem img{
+    max-width: 70%;
+}
+
+.project{
+    flex-basis: 100%;
+}
+
+.credits{
+    display:flex;
+}
+*.credits{
+    margin: 5px;
+}
+
+#projects1{
+    background-image: linear-gradient(aqua, black);
+    padding: 20px;
+    flex-basis: 100%;
+}
