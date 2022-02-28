@@ -22,8 +22,8 @@ purchase = document.getElementById("purchase");
   purchase.addEventListener('click', function(){
     if (credits > 0){
       credits = credits - project_price;
-      document.getElementById("totalCredits").textContent = `$${credits}`
-      document.getElementById("nowPlaying").innerHTML = '<video width="1000" height="1000" controls> <source src="./video/FantasyTrading.mp4" type="video/mp4"></video> <p>Personal Use</p> <p>Description: Fantasy football trading card game that assigns you a random player from a random year and then up to you to accept or reject a trade offer for them. </p><p>HTML, CSS, JAVASCRIPT, PYTHON, DJANGO</p> '
+      document.getElementById("totalCredits").textContent = `CREDITS = $${credits}`
+      document.getElementById("nowPlaying").innerHTML = '<h2>All Time Fantasy Game</h2><a href= "https://github.com/MGibson7/ALLTIMEFANTASY"><button>SOURCE CODE</button></a><a href= "./video/FantasyTrading.mp4"><button>LIVE DEMO</button></a><img src = "./img/football.png" alt = "football player">'
       
     }
     else if (document.getElementById("purchase").innerHTML == "UNLOCK PROJECT"){
