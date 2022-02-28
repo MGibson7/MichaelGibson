@@ -26,8 +26,7 @@ html{
     }*/
 
 body{
-    background-image: linear-gradient(blue
-    , lightskyblue);
+    background-color: black;
     color: white;
     margin: 10px;
 }
@@ -52,7 +51,8 @@ body{
 }
 
 #resume{
-    background-image: linear-gradient(lightskyblue, blue);
+    background-image: linear-gradient(orange, yellow, red
+    );
     flex-basis: 100%;
     padding: 10px;
 
@@ -123,7 +123,7 @@ h2{
 }
 
 #projects1{
-    background-image: linear-gradient(lightskyblue, blue);
+    background-image: linear-gradient(red, yellow, orange);
     padding: 20px;
-    flex-basis: 100%;
+    flex-basis: 40%;
 }
