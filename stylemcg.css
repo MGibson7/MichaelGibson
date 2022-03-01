@@ -27,7 +27,7 @@ html{
 
 body{
     background-image: linear-gradient(teal, lightblue, aqua);
-    color: white;
+    color: black;
     margin: 10px;
 }
 
@@ -140,7 +140,7 @@ button{
     padding: 20px;
 }
 
-#buttonclick img{
+#sentinfo{
     max-height: 100px;
 }
 
