@@ -28,7 +28,7 @@ html{
 body{
     background-image: linear-gradient(teal, lightblue, aqua);
     color: black;
-    margin: 10px;
+    margin: 5px;
 }
 
 #container{
@@ -158,6 +158,10 @@ button{
     flex-basis: 100%;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.space{
+    padding-bottom: 70px;
 }
 
 
