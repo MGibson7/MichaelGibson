@@ -186,7 +186,7 @@ purchase.addEventListener('click', function(){
               document.getElementById("credits").textContent = `Credits =  $${credits}`
               document.getElementById("buttonClick").innerHTML = "<img src = './img/junk.webp' alt = 'junkhaul' width = 100px, height = 100px>";
               document.getElementById("buttonClick2").innerHTML = "<h3>Junk in Truck Job Alert</h3>";
-              document.getElementById("buttonClick3").innerHTML = "<p> Text alerts of incoming job opportunities to vendors dependent on their criteria</p>\
+              document.getElementById("buttonClick3").innerHTML = "<p> Text alerts of incoming jobs to vendors dependent on their criteria</p>\
     <a href= 'https://github.com/MGibson7/SMALLBIZAUTOMATION-JunkintheTruck' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/JunkinTruckTexts.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
               
