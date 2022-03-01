@@ -216,7 +216,7 @@ purchase.addEventListener('click', function(){
                 if (credits >= project_price8 ){
                   credits = credits - project_price8;
                   document.getElementById("credits").textContent = `Credits =  ${credits}`
-                  document.getElementById("buttonClick").innerHTML = "<img src = './img/dtv.png' alt = 'fire' width = 100px, height = 100px>";
+                  document.getElementById("buttonClick").innerHTML = "<img src = './img/fire.webp' alt = 'fire' width = 100px, height = 100px>";
                   document.getElementById("buttonClick2").innerHTML = "<h3>Financial Independence Calculator</h3>";
                   document.getElementById("buttonClick3").innerHTML = "<p>Forecast potential retirement savings with inputted variables</p>\
     <a href= 'https://github.com/MGibson7/UltimateFIREProgram' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
