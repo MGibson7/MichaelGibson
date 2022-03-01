@@ -133,10 +133,15 @@ h2{
 button{
     background-image: linear-gradient(teal, lightblue, aqua);
     color: black;
+    cursor: pointer;
 }
 
 #buttons button{
     padding: 20px;
+}
+
+#buttonclick img{
+    max-height: 100px;
 }
 
 
