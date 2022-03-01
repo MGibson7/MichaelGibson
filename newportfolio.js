@@ -17,6 +17,18 @@ school.addEventListener("click", function(){
 
 });
 
+skills = document.getElementById("skills");
+
+skills.addEventListener("click", function(){
+  document.getElementById("buttonClick").innerHTML = "<img src = './img/python.png' alt = 'python' width = 100px, height = 100px> \
+  <img src = './img/sql.png' alt = 'sql' width = 100px, height = 100px> \
+  <img src = './img/htmlcss.png' alt = 'sql' width = 100px, height = 100px>\
+  <img src = './img/java.png' alt = 'sql' width = 100px, height = 100px>";
+  document.getElementById("buttonClick2").innerHTML = "";
+  document.getElementById("buttonClick3").innerHTML = "";
+
+});
+
 let credits = 0.00
 let project_price = 1.00
 let project_price2 = 2.00
@@ -52,7 +64,7 @@ document.getElementById("projectprice11").textContent = `credits ${project_price
 projectview = document.getElementById("projectView");
 
 projectview.addEventListener("click", function(){
-  document.getElementById("buttonClick").innerHTML = "";
+  document.getElementById("buttonClick").innerHTML = "<h2>You just earned 10 Credits!</h2>";
   document.getElementById("buttonClick2").innerHTML = "";
   document.getElementById("buttonClick3").innerHTML = "";
   credits = credits + 10
