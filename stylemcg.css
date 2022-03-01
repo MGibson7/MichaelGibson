@@ -26,7 +26,7 @@ html{
     }*/
 
 body{
-    background-color: black;
+    background-image: linear-gradient(teal, lightblue, aqua);
     color: white;
     margin: 10px;
 }
@@ -36,11 +36,7 @@ body{
     max-width: 100%;
 }
 
-#header{
-    text-align: center;
-    background-color: linear-gradient(orange
-    , orange);
-}
+
 
 #totalCredits p{
     text-align: center;
@@ -51,8 +47,7 @@ body{
 }
 
 #resume{
-    background-image: linear-gradient(orange, yellow, red
-    );
+    background-image: linear-gradient(teal, lightblue, aqua);
     flex-basis: 100%;
     padding: 0px;
 
