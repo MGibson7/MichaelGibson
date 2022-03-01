@@ -90,7 +90,7 @@ purchase11 = document.getElementById("purchase11");
 purchase.addEventListener('click', function(){
   if (credits >= project_price){
     credits = credits - project_price;
-    document.getElementById("credits").textContent = `Credits =  $${credits}`
+    document.getElementById("credits").textContent = `Credits =  ${credits}`
     document.getElementById("buttonClick").innerHTML = "<img src = './img/football.png' alt = 'Helmet' width = 100px, height = 100px>";
     document.getElementById("buttonClick2").innerHTML = "<h3>All Time Fantasy Football</h3>";
     document.getElementById("buttonClick3").innerHTML = "<p>Fantasy Football Trading Card Game</p>\
@@ -99,7 +99,7 @@ purchase.addEventListener('click', function(){
     
   }
   else {
-    document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  $${credits}`
+    document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
 
   }
   
@@ -108,7 +108,7 @@ purchase.addEventListener('click', function(){
   purchase2.addEventListener('click', function(){
     if (credits >= project_price2 ){
       credits = credits - project_price2;
-      document.getElementById("credits").textContent = `Credits =  $${credits}`
+      document.getElementById("credits").textContent = `Credits =  ${credits}`
       document.getElementById("buttonClick").innerHTML = "<img src = './img/viasat.png' alt = 'Viasat' width = 100px, height = 100px>";
       document.getElementById("buttonClick2").innerHTML = "<h3>Viasat Moving Averages</h3>";
       document.getElementById("buttonClick3").innerHTML = "<p>15-30-60-90 Day Moving Averages for FFL</p>\
@@ -117,7 +117,7 @@ purchase.addEventListener('click', function(){
       
     }
     else {
-      document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  $${credits}`
+      document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
   
     }
     
@@ -126,8 +126,7 @@ purchase.addEventListener('click', function(){
     purchase3.addEventListener('click', function(){
       if (credits >= project_price3 ){
         credits = credits - project_price3;
-        document.getElementById("credits").textContent = `Credits =  $${credits}`
-        document.getElementById("credits").textContent = `Credits =  $${credits}`
+        document.getElementById("credits").textContent = `Credits =  ${credits}`
         document.getElementById("buttonClick").innerHTML = "<img src = './img/robot.jpeg' alt = 'Robot' width = 100px, height = 100px>";
         document.getElementById("buttonClick2").innerHTML = "<h3>Rock Paper Scissors Java</h3>";
         document.getElementById("buttonClick3").innerHTML = "<p>Rock Paper Scissors User vs Computer</p>\
@@ -136,7 +135,7 @@ purchase.addEventListener('click', function(){
         
       }
       else {
-        document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  $${credits}`
+        document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
     
       }
       
@@ -145,9 +144,7 @@ purchase.addEventListener('click', function(){
       purchase4.addEventListener('click', function(){
         if (credits >= project_price4 ){
           credits = credits - project_price4;
-          document.getElementById("credits").textContent = `Credits =  $${credits}`
-          document.getElementById("credits").textContent = `Credits =  $${credits}`
-        document.getElementById("credits").textContent = `Credits =  $${credits}`
+          document.getElementById("credits").textContent = `Credits =  ${credits}`
         document.getElementById("buttonClick").innerHTML = "<img src = './img/stock.webp' alt = 'stock' width = 100px, height = 100px>";
         document.getElementById("buttonClick2").innerHTML = "<h3>Stock Correlation</h3>";
         document.getElementById("buttonClick3").innerHTML = "<p>Degree two stocks have historically been correlated</p>\
@@ -156,7 +153,7 @@ purchase.addEventListener('click', function(){
           
         }
         else {
-          document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  $${credits}`
+          document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
       
         }
         
@@ -164,7 +161,7 @@ purchase.addEventListener('click', function(){
         purchase5.addEventListener('click', function(){
           if (credits >= project_price5 ){
             credits = credits - project_price5;
-            document.getElementById("credits").textContent = `Credits =  $${credits}`
+            document.getElementById("credits").textContent = `Credits =  ${credits}`
             document.getElementById("buttonClick").innerHTML = "<img src = './img/viasat.png' alt = 'invoice' width = 100px, height = 100px>";
             document.getElementById("buttonClick2").innerHTML = "<h3>Tech Invoice Maker</h3>";
             document.getElementById("buttonClick3").innerHTML = "<p>Scrapes data from company site to build invoice</p>\
@@ -173,7 +170,7 @@ purchase.addEventListener('click', function(){
             
           }
           else {
-            document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  $${credits}`
+            document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
         
           }
           
@@ -182,8 +179,8 @@ purchase.addEventListener('click', function(){
           purchase6.addEventListener('click', function(){
             if (credits >= project_price6){
               credits = credits - project_price6;
-              document.getElementById("credits").textContent = `Credits =  $${credits}`
-              document.getElementById("credits").textContent = `Credits =  $${credits}`
+              document.getElementById("credits").textContent = `Credits =  ${credits}`
+              document.getElementById("credits").textContent = `Credits =  ${credits}`
               document.getElementById("buttonClick").innerHTML = "<img src = './img/junk.webp' alt = 'junkhaul' width = 100px, height = 100px>";
               document.getElementById("buttonClick2").innerHTML = "<h3>Junk in Truck Job Alert</h3>";
               document.getElementById("buttonClick3").innerHTML = "<p> Text alerts of incoming jobs to vendors dependent on their criteria</p>\
@@ -192,7 +189,7 @@ purchase.addEventListener('click', function(){
               
             }
             else {
-              document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  $${credits}`
+              document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
           
             }
             
@@ -200,7 +197,7 @@ purchase.addEventListener('click', function(){
             purchase7.addEventListener('click', function(){
               if (credits >= project_price7 ){
                 credits = credits - project_price7;
-                document.getElementById("credits").textContent = `Credits =  $${credits}`
+                document.getElementById("credits").textContent = `Credits =  ${credits}`
                 document.getElementById("buttonClick").innerHTML = "<img src = './img/dtv.png' alt = 'directv' width = 100px, height = 100px>";
                 document.getElementById("buttonClick2").innerHTML = "<h3>AC DTV SQL</h3>";
                 document.getElementById("buttonClick3").innerHTML = "<p>Monthly and Annual Revenue/Customer/Etc. Reporting</p>\
@@ -209,7 +206,7 @@ purchase.addEventListener('click', function(){
                 
               }
               else {
-                document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  $${credits}`
+                document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
             
               }
               
@@ -218,8 +215,7 @@ purchase.addEventListener('click', function(){
               purchase8.addEventListener('click', function(){
                 if (credits >= project_price8 ){
                   credits = credits - project_price8;
-                  document.getElementById("credits").textContent = `Credits =  $${credits}`
-                  document.getElementById("credits").textContent = `Credits =  $${credits}`
+                  document.getElementById("credits").textContent = `Credits =  ${credits}`
                   document.getElementById("buttonClick").innerHTML = "<img src = './img/dtv.png' alt = 'fire' width = 100px, height = 100px>";
                   document.getElementById("buttonClick2").innerHTML = "<h3>Financial Independence Calculator</h3>";
                   document.getElementById("buttonClick3").innerHTML = "<p>Forecast potential retirement savings with inputted variables</p>\
@@ -228,7 +224,7 @@ purchase.addEventListener('click', function(){
                   
                 }
                 else {
-                  document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  $${credits}`
+                  document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
               
                 }
                 
@@ -237,7 +233,7 @@ purchase.addEventListener('click', function(){
                 purchase9.addEventListener('click', function(){
                   if (credits >= project_price9 ){
                     credits = credits - project_price9;
-                    document.getElementById("credits").textContent = `Credits =  $${credits}`
+                    document.getElementById("credits").textContent = `Credits =  ${credits}`
                     document.getElementById("buttonClick").innerHTML = "<img src = './img/contact.png' alt = 'phone' width = 100px, height = 100px>";
                     document.getElementById("buttonClick2").innerHTML = "<h3>AC Add Contact Info</h3>";
                     document.getElementById("buttonClick3").innerHTML = "<p>Automate the notation process of adding the technician's contact info</p>\
@@ -246,7 +242,7 @@ purchase.addEventListener('click', function(){
                     
                   }
                   else {
-                    document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  $${credits}`
+                    document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
                 
                   }
                   
@@ -255,8 +251,7 @@ purchase.addEventListener('click', function(){
                   purchase10.addEventListener('click', function(){
                     if (credits >= project_price10 ){
                       credits = credits - project_price10;
-                      document.getElementById("credits").textContent = `Credits =  $${credits}`
-                      document.getElementById("credits").textContent = `Credits =  $${credits}`
+                      document.getElementById("credits").textContent = `Credits =  ${credits}`
                       document.getElementById("buttonClick").innerHTML = "<img src = './img/viasat.png' alt = 'viasat' width = 100px, height = 100px>";
                       document.getElementById("buttonClick2").innerHTML = "<h3>AC Viasat SQL</h3>";
                       document.getElementById("buttonClick3").innerHTML = "<p>Monthly/Annual Viasat Reporting</p>\
@@ -265,7 +260,7 @@ purchase.addEventListener('click', function(){
                       
                     }
                     else {
-                      document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  $${credits}`
+                      document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
                   
                     }
                     
@@ -274,7 +269,7 @@ purchase.addEventListener('click', function(){
                     purchase11.addEventListener('click', function(){
                       if (credits >= project_price11){
                         credits = credits - project_price11;
-                        document.getElementById("credits").textContent = `Credits =  $${credits}`
+                        document.getElementById("credits").textContent = `Credits =  ${credits}`
                         document.getElementById("buttonClick").innerHTML = "<img src = './img/football.jpeg' alt = 'football' width = 100px, height = 100px>";
                         document.getElementById("buttonClick2").innerHTML = "<h3>DK Line up Builder</h3>";
                         document.getElementById("buttonClick3").innerHTML = "<p>Build DK Lineups and Optimize Them</p>\
@@ -284,7 +279,7 @@ purchase.addEventListener('click', function(){
                         
                       }
                       else {
-                        document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  $${credits}`
+                        document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
                     
                       }
                       

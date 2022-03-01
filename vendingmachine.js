@@ -4,7 +4,7 @@ let project_price2 = 2.00
 
 
 
-document.getElementById("credits").textContent = `Credits =  $${credits}`;
+document.getElementById("credits").textContent = `Credits =  ${credits}`;
 document.getElementById("projectprice").textContent = `Project Price =  $${project_price}`;
 document.getElementById("projectprice2").textContent = `Project Price =  $${project_price2}`;
 
@@ -22,7 +22,7 @@ purchase = document.getElementById("purchase");
 purchase.addEventListener('click', function(){
   if (credits > 0 && document.getElementById("purchase").innerHTML == "UNLOCK PROJECT"){
     credits = credits - project_price;
-    document.getElementById("credits").textContent = `Credits =  $${credits}`
+    document.getElementById("credits").textContent = `Credits =  ${credits}`
     
   }
   else if (document.getElementById("purchase").innerHTML == "UNLOCK PROJECT"){
@@ -58,7 +58,7 @@ purchase.addEventListener('click', function(){
 purchase2.addEventListener('click', function(){
   if (credits > 0 && document.getElementById("purchase2").innerHTML == "UNLOCK PROJECT"){
     credits = credits - project_price2;
-    document.getElementById("credits").textContent = `Credits =  $${credits}`
+    document.getElementById("credits").textContent = `Credits =  ${credits}`
     
   }
   else if (document.getElementById("purchase2").innerHTML == "UNLOCK PROJECT"){
