@@ -15,9 +15,15 @@ work.addEventListener("click", function(){
   document.getElementById("buttonClick").innerHTML = "<img src = './img/dtv.png' alt = 'DirecTV' width = 100px, height = 100px>";
   document.getElementById("buttonClick2").innerHTML = "<h3>Business Analyst for American Communications</h3>";
   document.getElementById("buttonClick3").innerHTML = "<p>2013-Present</p>";
-  document.getElementById("buttonClick4").innerHTML = "<ul><li> Produced daily, monthly, quarterly, and annual reports utilizing MySQL to showcase the revenue generated from each client, identify trends and similarities among the newly acquired customers, and monitor the health of the existing one thousand plus accounts that make up ACs DirecTV for Business customer base. \
+  document.getElementById("buttonClick4").innerHTML = "<style>li{margin-bottom: 10px; div {flex-basis:100%;}}</style><div><ul><li> Produced daily, monthly, quarterly, and annual reports utilizing MySQL to showcase the revenue generated from each client, identify trends and similarities among the newly acquired customers, and monitor the health of the existing one thousand plus accounts that make up ACs DirecTV for Business customer base. \
   This has contributed to the companys new customer acquisition cost being just 88% of what it was in 2012 and the existing customer churn has improved exponentially as well when adjusted for industry factors. \
-  Throughout this time DirecTVs number of paying subscribers decreased by an estimated 35% while ACs number increased by 337%. </li></ul>";
+  Throughout this time DirecTVs number of paying subscribers decreased by an estimated 35% while ACs number increased by 337%. </li>\
+  <li>Automated elements of monthly reporting and daily contractor invoicing by constructing a Python program which featured web scraping via selenium,\
+   functions, and loops. With this automation came the elimination of simple human errors within the invoicing which has saved an undefined but significant amount\
+    of capital and time. Contractor invoice audits changed from a weekly occurrence to now mostly non-existent. </li> \
+    <li>Forecasted monthly inventory needed using web\
+     scraping, regression analysis, and data visualization via Python and Excel. This allowed for the business to on average decrease \
+     its shipping expenses by 62% annually. </li></ul></div>";
 
 });
 
@@ -27,6 +33,7 @@ school.addEventListener("click", function(){
   document.getElementById("buttonClick").innerHTML = "<img src = './img/uncw.png' alt = 'UNCW' width = 100px, height = 100px> ";
   document.getElementById("buttonClick2").innerHTML = "<h3>Bachelor of Science in Business Administration</h3>";
   document.getElementById("buttonClick3").innerHTML = "<p>Graduated December 2013</p>";
+  document.getElementById("buttonClick4").innerHTML = "<style>li{margin-bottom: 10px;}</style><ul><li> 3.3 GPA with a concentration in economics </li>\</ul>";
 
 });
 
@@ -39,6 +46,7 @@ skills.addEventListener("click", function(){
   <img src = './img/java.png' alt = 'sql' width = 100px, height = 100px>";
   document.getElementById("buttonClick2").innerHTML = "";
   document.getElementById("buttonClick3").innerHTML = "";
+  document.getElementById("buttonClick4").innerHTML = "";
 
 });
 
@@ -78,10 +86,11 @@ projectview = document.getElementById("projectView");
 
 projectview.addEventListener("click", function(){
   document.getElementById("buttonClick").innerHTML = "<h2>You just earned 10 Credits!</h2>";
-  document.getElementById("buttonClick2").innerHTML = "";
+  document.getElementById("buttonClick2").innerHTML = "<h3>Use them on the Portfolio Vending Machine!</h3>";
   document.getElementById("buttonClick3").innerHTML = "";
   credits = credits + 10
   document.getElementById("credits").textContent = `Credits =  ${credits}`;
+  document.getElementById("buttonClick4").innerHTML = "";
 
 });
 
@@ -106,9 +115,11 @@ purchase.addEventListener('click', function(){
     document.getElementById("credits").textContent = `Credits =  ${credits}`
     document.getElementById("buttonClick").innerHTML = "<img src = './img/football.png' alt = 'Helmet' width = 100px, height = 100px>";
     document.getElementById("buttonClick2").innerHTML = "<h3>All Time Fantasy Football</h3>";
-    document.getElementById("buttonClick3").innerHTML = "<p>Fantasy Football Trading Card Game</p>\
+    document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/ALLTIMEFANTASY' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/FantasyTrading.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+    document.getElementById("buttonClick4").innerHTML = "<p>Fantasy football trading card game that assigns you a random player from a random year and then it's up to you to accept or reject a trade offer for them.</p>\
+    <p>HTML, CSS, JAVASCRIPT, PYTHON, DJANGO</p>";
     
   }
   else {
@@ -124,9 +135,12 @@ purchase.addEventListener('click', function(){
       document.getElementById("credits").textContent = `Credits =  ${credits}`
       document.getElementById("buttonClick").innerHTML = "<img src = './img/viasat.png' alt = 'Viasat' width = 100px, height = 100px>";
       document.getElementById("buttonClick2").innerHTML = "<h3>Viasat Moving Averages</h3>";
-      document.getElementById("buttonClick3").innerHTML = "<p>15-30-60-90 Day Moving Averages for FFL</p>\
+      document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/ViasatMovingAvgs' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/viasatmoving.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+      document.getElementById("buttonClick4").innerHTML = "Program to scrape data off company site to provide an indepth report of the 90 day, 60 day, 30 day, and\
+       15 day moving averages (normalized for a 30 day period). This was utilized to optimize equipment ordering and save on shipping costs/avoid out of stock reschedules. \
+       <p>PYTHON, SELENIUM, SEABORN, MATPLOTLIB</p>";
       
     }
     else {
@@ -142,9 +156,11 @@ purchase.addEventListener('click', function(){
         document.getElementById("credits").textContent = `Credits =  ${credits}`
         document.getElementById("buttonClick").innerHTML = "<img src = './img/robot.jpeg' alt = 'Robot' width = 100px, height = 100px>";
         document.getElementById("buttonClick2").innerHTML = "<h3>Rock Paper Scissors Java</h3>";
-        document.getElementById("buttonClick3").innerHTML = "<p>Rock Paper Scissors User vs Computer</p>\
+        document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/RockPaperScissorsJava' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/RockPaperScissorsJava.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+        document.getElementById("buttonClick4").innerHTML = "Program that utilizes JavaScript to allow a user to play rock-paper-scissors against the computer in first to 5 matches and keeps track of titles won.  \
+                        <p>JAVASCRIPT, HTML, CSS</p>";
         
       }
       else {
@@ -160,9 +176,12 @@ purchase.addEventListener('click', function(){
           document.getElementById("credits").textContent = `Credits =  ${credits}`
         document.getElementById("buttonClick").innerHTML = "<img src = './img/stock.webp' alt = 'stock' width = 100px, height = 100px>";
         document.getElementById("buttonClick2").innerHTML = "<h3>Stock Correlation</h3>";
-        document.getElementById("buttonClick3").innerHTML = "<p>Degree two stocks have historically been correlated</p>\
+        document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/StockCorrelation' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/stockcorrelation.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+        document.getElementById("buttonClick4").innerHTML = "Program to identify the degree to which two stocks have historically been correlated. Also predicts what price of \
+        dependent stock should be given X price of independent stock. Can be utilized to identify potential stock arbitrage in sectors.   \
+                        <p>PYTHON, SELENIUM, LINEAR REGRESSION, MATPLOTLIB, SEABORN</p>";
           
         }
         else {
@@ -177,9 +196,12 @@ purchase.addEventListener('click', function(){
             document.getElementById("credits").textContent = `Credits =  ${credits}`
             document.getElementById("buttonClick").innerHTML = "<img src = './img/viasat.png' alt = 'invoice' width = 100px, height = 100px>";
             document.getElementById("buttonClick2").innerHTML = "<h3>Tech Invoice Maker</h3>";
-            document.getElementById("buttonClick3").innerHTML = "<p>Scrapes data from company site to build invoice</p>\
+            document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/FFLTechInvoiceMaker' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/ViasatInvoicing.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+            document.getElementById("buttonClick4").innerHTML = "Program that scrapes completed job data from company site and compiles it into a word document invoice based on the inputted tech name and \
+            specified date range \
+                                        <p>PYTHON, SELENIUM</p>";
             
           }
           else {
@@ -196,9 +218,11 @@ purchase.addEventListener('click', function(){
               document.getElementById("credits").textContent = `Credits =  ${credits}`
               document.getElementById("buttonClick").innerHTML = "<img src = './img/junk.webp' alt = 'junkhaul' width = 100px, height = 100px>";
               document.getElementById("buttonClick2").innerHTML = "<h3>Junk in Truck Job Alert</h3>";
-              document.getElementById("buttonClick3").innerHTML = "<p> Text alerts of incoming jobs to vendors dependent on their criteria</p>\
+              document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/SMALLBIZAUTOMATION-JunkintheTruck' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/JunkinTruckTexts.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+              document.getElementById("buttonClick4").innerHTML = "Program that sends out text alerts of incoming job opportunities to vendors dependent on their criteria & ability \
+                          <p>PYTHON, TWILIO</p>";
               
             }
             else {
@@ -213,9 +237,12 @@ purchase.addEventListener('click', function(){
                 document.getElementById("credits").textContent = `Credits =  ${credits}`
                 document.getElementById("buttonClick").innerHTML = "<img src = './img/dtv.png' alt = 'directv' width = 100px, height = 100px>";
                 document.getElementById("buttonClick2").innerHTML = "<h3>AC DTV SQL</h3>";
-                document.getElementById("buttonClick3").innerHTML = "<p>Monthly and Annual Revenue/Customer/Etc. Reporting</p>\
+                document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/ACDTVSQLQUERIES' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/ACDTVSQL2.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+                document.getElementById("buttonClick4").innerHTML = "SQL code for pulling total number of unique accounts and subsequent billing from large assortment of account data. \
+                        Group unique accounts, sort by revenue, state, etc. Quick view of new accounts vs lost accounts. See overview of customer base differences month vs month.    \
+                        <p>SQL</p>";
                 
               }
               else {
@@ -231,9 +258,12 @@ purchase.addEventListener('click', function(){
                   document.getElementById("credits").textContent = `Credits =  ${credits}`
                   document.getElementById("buttonClick").innerHTML = "<img src = './img/fire.webp' alt = 'fire' width = 100px, height = 100px>";
                   document.getElementById("buttonClick2").innerHTML = "<h3>Financial Independence Calculator</h3>";
-                  document.getElementById("buttonClick3").innerHTML = "<p>Forecast potential retirement savings with inputted variables</p>\
+                  document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/UltimateFIREProgram' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/fire.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+                  document.getElementById("buttonClick4").innerHTML = "Program to forecast potential retirement savings with inputted variables \
+                  (having a kid in X year, new home in X year at X price, wage increase/decrease, etc.)  \
+                        <p>PYTHON</p>";
                   
                 }
                 else {
@@ -249,9 +279,12 @@ purchase.addEventListener('click', function(){
                     document.getElementById("credits").textContent = `Credits =  ${credits}`
                     document.getElementById("buttonClick").innerHTML = "<img src = './img/contact.png' alt = 'phone' width = 100px, height = 100px>";
                     document.getElementById("buttonClick2").innerHTML = "<h3>AC Add Contact Info</h3>";
-                    document.getElementById("buttonClick3").innerHTML = "<p>Automate the notation process of adding the technician's contact info</p>\
+                    document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/ACAddTechContactInfo' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/addcontactinfovia.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+                    document.getElementById("buttonClick4").innerHTML = "Program designed to automate the notation process of adding the technician's contact information on work order notes. \
+                    Program uses selenium and adds phone number of corresponding tech that is assigned to that work order.   \
+                              <p>PYTHON SELENIUM</p>";
                     
                   }
                   else {
@@ -267,9 +300,12 @@ purchase.addEventListener('click', function(){
                       document.getElementById("credits").textContent = `Credits =  ${credits}`
                       document.getElementById("buttonClick").innerHTML = "<img src = './img/viasat.png' alt = 'viasat' width = 100px, height = 100px>";
                       document.getElementById("buttonClick2").innerHTML = "<h3>AC Viasat SQL</h3>";
-                      document.getElementById("buttonClick3").innerHTML = "<p>Monthly/Annual Viasat Reporting</p>\
+                      document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/ACViasatSQL' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/ViasatSQL.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+                      document.getElementById("buttonClick4").innerHTML = "SQL code for combining Viasat workorders with their corresponding payment voucher. Comparing month vs month and for viewing tech, \
+                      region, or work order type specific performance.    \
+                      <p>SQL</p>";
                       
                     }
                     else {
@@ -285,9 +321,13 @@ purchase.addEventListener('click', function(){
                         document.getElementById("credits").textContent = `Credits =  ${credits}`
                         document.getElementById("buttonClick").innerHTML = "<img src = './img/football.jpeg' alt = 'football' width = 100px, height = 100px>";
                         document.getElementById("buttonClick2").innerHTML = "<h3>DK Line up Builder</h3>";
-                        document.getElementById("buttonClick3").innerHTML = "<p>Build DK Lineups and Optimize Them</p>\
+                        document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/draftkingslineupbuilder' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/draftkings.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+                        document.getElementById("buttonClick4").innerHTML = "Program to build draftkings lineups (user sets the number of attempts and feeds in excel file \
+                          with point projection or player scores).\
+                         Program outputs top ones onto a Word Document with corresponding lineup score.     \
+                      <p>PYTHON</p>";
                         
                         
                       }
