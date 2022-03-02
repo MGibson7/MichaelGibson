@@ -46,7 +46,9 @@ skills.addEventListener("click", function(){
   <img src = './img/java.png' alt = 'sql' width = 100px, height = 100px>";
   document.getElementById("buttonClick2").innerHTML = "";
   document.getElementById("buttonClick3").innerHTML = "";
-  document.getElementById("buttonClick4").innerHTML = "";
+  document.getElementById("buttonClick4").innerHTML = "<style>li{margin-bottom: 10px;}</style><ul><li> Proficient in JavaScript, Python, CSS, HTML, MySQL </li>\
+  <li>Creative Problem Solving</li><li>Excellent Written and Verbal Communication</li><li>Ability to Work Independently and Collaboratively</li>\
+  <li>Understanding of Core Business Principles</li></ul>";
 
 });
 
