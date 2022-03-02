@@ -1,10 +1,23 @@
 //button animations 
+
+me = document.getElementById("me");
+me.addEventListener("click", function(){
+  document.getElementById("buttonClick").innerHTML = "";
+  document.getElementById("buttonClick2").innerHTML = "";
+  document.getElementById("buttonClick3").innerHTML = "";
+  document.getElementById("buttonClick4").innerHTML = "";
+
+});
+
 work = document.getElementById("work");
 
 work.addEventListener("click", function(){
   document.getElementById("buttonClick").innerHTML = "<img src = './img/dtv.png' alt = 'DirecTV' width = 100px, height = 100px>";
   document.getElementById("buttonClick2").innerHTML = "<h3>Business Analyst for American Communications</h3>";
   document.getElementById("buttonClick3").innerHTML = "<p>2013-Present</p>";
+  document.getElementById("buttonClick4").innerHTML = "<ul><li> Produced daily, monthly, quarterly, and annual reports utilizing MySQL to showcase the revenue generated from each client, identify trends and similarities among the newly acquired customers, and monitor the health of the existing one thousand plus accounts that make up ACs DirecTV for Business customer base. \
+  This has contributed to the companys new customer acquisition cost being just 88% of what it was in 2012 and the existing customer churn has improved exponentially as well when adjusted for industry factors. \
+  Throughout this time DirecTVs number of paying subscribers decreased by an estimated 35% while ACs number increased by 337%. </li></ul>";
 
 });
 

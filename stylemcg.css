@@ -6,9 +6,9 @@ html{
     box-sizing: inherit;
     }
 
-/*@keyframes shake {
-        0% { transform: translate(1px, 1px) rotate(0deg); background-color: black; }
-        10% { transform: translate(-1px, -2px) rotate(-1deg); background-color: orange; }
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); background-color: hsl(39, 100%, 50%); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); background-color: black; }
         20% { transform: translate(-3px, 0px) rotate(1deg); background-color: red; }
         30% { transform: translate(3px, 2px) rotate(0deg); background-color: black;}
         40% { transform: translate(1px, -1px) rotate(1deg); background-color: red;}
@@ -19,11 +19,7 @@ html{
         90% { transform: translate(1px, 2px) rotate(0deg); background-color: black;}
         100% { transform: translate(1px, -2px) rotate(-1deg); background-color: red;}
       }
-#header:hover{
-        animation-name: shake;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-    }*/
+
 
 body{
     background-image: linear-gradient(teal, lightblue, aqua);
@@ -159,6 +155,14 @@ button{
     flex-basis: 100%;
 }
 
+#me{
+    cursor: pointer;
+}
+
+#me:active{
+    border: 10px solid black;
+
+}
 
 
 

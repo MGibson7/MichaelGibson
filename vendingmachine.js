@@ -1,92 +1,55 @@
-let credits = 10.00
-let project_price = 1.00
-let project_price2 = 2.00
+ button = document.getElementById("Do")
+ 
+ button.addEventListener("click", function(){
+  const container = document.querySelector('#container');
+
+  const content = document.createElement('div');
+  content.classList.add('content');
+  content.textContent = 'This is the glorious text-content!';
+
+  container.appendChild(content);
+
+  const newContent = document.createElement('p')
+
+  newContent.setAttribute('style', 'color: red;');    
+
+  newContent.classList.add('newContent');
+  newContent.textContent = "Hey I'm Red!";
+
+  container.appendChild(newContent);
+
+  const newContent2 = document.createElement('h3')
+
+  newContent2.setAttribute('style', 'color: blue;');    
+
+  newContent2.classList.add('newContent');
+  newContent2.textContent = "Hey I'm Blue!";
+
+  container.appendChild(newContent2);
+
+  const content3 = document.createElement('div');
+  content3.setAttribute('style', 'background-color: pink;')
+  content3.classList.add('content');
+
+  const content4 = document.createElement('h1');
+  content4.classList.add('content4');
+  content4.textContent = "Hey I'm H1!";
+
+  const content5 = document.createElement('p');
+  content5.classList.add('content4');
+  content5.textContent = "Me too!";
+
+  content3.appendChild(content4);
+  content3.appendChild(content5);
 
 
 
-document.getElementById("credits").textContent = `Credits =  ${credits}`;
-document.getElementById("projectprice").textContent = `Project Price =  $${project_price}`;
-document.getElementById("projectprice2").textContent = `Project Price =  $${project_price2}`;
 
 
-function calccredits(a, b){
-  credits = (a-b);
-  console.log(credits);
-};
+  container.appendChild(content3);
 
 
-purchase = document.getElementById("purchase");
-
-//doing the math for first project//
-
-purchase.addEventListener('click', function(){
-  if (credits > 0 && document.getElementById("purchase").innerHTML == "UNLOCK PROJECT"){
-    credits = credits - project_price;
-    document.getElementById("credits").textContent = `Credits =  ${credits}`
-    
-  }
-  else if (document.getElementById("purchase").innerHTML == "UNLOCK PROJECT"){
-    document.getElementById("credits").textContent = `Insufficient Funds for Purchase Reload page to add more credits! Credits =  $${credits}`
-
-  }
-  else{
-    
-
-  }
-  });
-
-
-
-purchase.addEventListener('click', function(){
-  if (credits>0){
-    document.getElementById('videolink').textContent = `LIVE DEMO`;
-    document.getElementById('gitlink').textContent = `SOURCE CODE`;
-    document.getElementById('description').textContent = "Fantasy football trading card game that assigns you a random player from a random year and then it's up to you to accept or reject a trade offer for them.";
-    document.getElementById('purchase').textContent = `UNLOCKED`;
-    
-
-  }
-  else{
-    document.getElementById('videolink').textContent = ``;
-
-  }
-}
-)
-
-//doing the math for second project//
-
-purchase2.addEventListener('click', function(){
-  if (credits > 0 && document.getElementById("purchase2").innerHTML == "UNLOCK PROJECT"){
-    credits = credits - project_price2;
-    document.getElementById("credits").textContent = `Credits =  ${credits}`
-    
-  }
-  else if (document.getElementById("purchase2").innerHTML == "UNLOCK PROJECT"){
-    document.getElementById("credits").textContent = `Insufficient Funds for Purchase Reload page to add more credits! Credits =  $${credits}`
-
-  }
-  else{
-    
-
-  }
-  });
-
-
-
-purchase2.addEventListener('click', function(){
-  if (credits>0){
-    document.getElementById('videolink2').textContent = `LIVE DEMO`;
-    document.getElementById('gitlink2').textContent = `SOURCE CODE`;
-    document.getElementById('purchase2').textContent = `UNLOCKED`;
-    
-
-  }
-  else{
-    document.getElementById('videolink2').textContent = ``;
-
-  }
-}
-)
+ })
   
 
 
