@@ -355,10 +355,9 @@ purchase.addEventListener('click', function(){
                           document.getElementById("buttonClick3").innerHTML = "\
       <a href= 'https://github.com/MGibson7/etchasketch' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                           <a href= 'https://mgibson7.github.io/etchasketch/'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
-                          document.getElementById("buttonClick4").innerHTML = "Program to build draftkings lineups (user sets the number of attempts and feeds in excel file \
-                            with point projection or player scores).\
-                           Program outputs top ones onto a Word Document with corresponding lineup score.     \
-                        <p>PYTHON</p>";
+                          document.getElementById("buttonClick4").innerHTML = "Program to mimic an Etch A Sketch utilizing DOM Manipulation via JavaScript \
+                                \
+                        <p>JAVASCRIPT</p>";
                           
                           
                         }
