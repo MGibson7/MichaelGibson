@@ -9,6 +9,10 @@ me.addEventListener("click", function(){
 
 });
 
+
+
+
+
 work = document.getElementById("work");
 
 work.addEventListener("click", function(){
@@ -81,6 +85,7 @@ document.getElementById("projectprice8").textContent = `credits ${project_price8
 document.getElementById("projectprice9").textContent = `credits ${project_price9}`;
 document.getElementById("projectprice10").textContent = `credits ${project_price10}`;
 document.getElementById("projectprice11").textContent = `credits ${project_price11}`;
+document.getElementById("projectprice12").textContent = `credits ${project_price12}`;
 
 
 
@@ -108,6 +113,7 @@ purchase8 = document.getElementById("purchase8");
 purchase9 = document.getElementById("purchase9");
 purchase10 = document.getElementById("purchase10");
 purchase11 = document.getElementById("purchase11");
+purchase12 = document.getElementById("purchase12");
 
 //doing the math for projects//
 
@@ -339,3 +345,26 @@ purchase.addEventListener('click', function(){
                       }
                       
                       });
+
+                      purchase12.addEventListener('click', function(){
+                        if (credits >= project_price12){
+                          credits = credits - project_price11;
+                          document.getElementById("credits").textContent = `Credits =  ${credits}`
+                          document.getElementById("buttonClick").innerHTML = "<img src = './img/etch.jpeg' alt = 'etchasketch' width = 100px, height = 100px>";
+                          document.getElementById("buttonClick2").innerHTML = "<h3>ETCHASKETCH</h3>";
+                          document.getElementById("buttonClick3").innerHTML = "\
+      <a href= 'https://github.com/MGibson7/etchasketch' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
+                          <a href= 'https://mgibson7.github.io/etchasketch/'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+                          document.getElementById("buttonClick4").innerHTML = "Program to build draftkings lineups (user sets the number of attempts and feeds in excel file \
+                            with point projection or player scores).\
+                           Program outputs top ones onto a Word Document with corresponding lineup score.     \
+                        <p>PYTHON</p>";
+                          
+                          
+                        }
+                        else {
+                          document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
+                      
+                        }
+                        
+                        });
