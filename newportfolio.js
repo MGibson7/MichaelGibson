@@ -69,6 +69,7 @@ let project_price9 = 1.00
 let project_price10 = 2.00
 let project_price11 = 2.50
 let project_price12 = 2.50
+let project_price13 = 3.50
 
 
 
@@ -86,6 +87,7 @@ document.getElementById("projectprice9").textContent = `credits ${project_price9
 document.getElementById("projectprice10").textContent = `credits ${project_price10}`;
 document.getElementById("projectprice11").textContent = `credits ${project_price11}`;
 document.getElementById("projectprice12").textContent = `credits ${project_price12}`;
+document.getElementById("projectprice13").textContent = `credits ${project_price13}`;
 
 
 
@@ -114,6 +116,7 @@ purchase9 = document.getElementById("purchase9");
 purchase10 = document.getElementById("purchase10");
 purchase11 = document.getElementById("purchase11");
 purchase12 = document.getElementById("purchase12");
+purchase13 = document.getElementById("purchase13")
 
 //doing the math for projects//
 
@@ -348,7 +351,7 @@ purchase.addEventListener('click', function(){
 
                       purchase12.addEventListener('click', function(){
                         if (credits >= project_price12){
-                          credits = credits - project_price11;
+                          credits = credits - project_price12;
                           document.getElementById("credits").textContent = `Credits =  ${credits}`
                           document.getElementById("buttonClick").innerHTML = "<img src = './img/etch.jpeg' alt = 'etchasketch' width = 100px, height = 100px>";
                           document.getElementById("buttonClick2").innerHTML = "<h3>ETCHASKETCH</h3>";
@@ -365,5 +368,25 @@ purchase.addEventListener('click', function(){
                           document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
                       
                         }
+
+                        purchase13.addEventListener('click', function(){
+                          if (credits >= project_price13){
+                            credits = credits - project_price13;
+                            document.getElementById("credits").textContent = `Credits =  ${credits}`
+                            document.getElementById("buttonClick").innerHTML = "<img src = './img/calculator.jpeg' alt = 'calculator' width = 100px, height = 100px>";
+                            document.getElementById("buttonClick2").innerHTML = "<h3>Calculator</h3>";
+                            document.getElementById("buttonClick3").innerHTML = "\
+        <a href= 'https://github.com/MGibson7/calculator' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
+                            <a href= 'https://mgibson7.github.io/Calculator/'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+                            document.getElementById("buttonClick4").innerHTML = "Utilizing JS functions and DOM manipulation to produce a calculator \
+                                  \
+                          <p>JAVASCRIPT</p>";
+                            
+                            
+                          }
+                          else {
+                            document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
+                        
+                          }
                         
                         });
