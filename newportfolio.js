@@ -368,6 +368,7 @@ purchase.addEventListener('click', function(){
                           document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
                       
                         }
+                      });
 
                         purchase13.addEventListener('click', function(){
                           if (credits >= project_price13){
@@ -388,5 +389,6 @@ purchase.addEventListener('click', function(){
                             document.getElementById("credits").textContent = `Insufficient Funds click projects tab to add more credits! Credits =  ${credits}`
                         
                           }
+                        
                         
                         });
