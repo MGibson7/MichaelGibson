@@ -1,3 +1,5 @@
+let mode_type = "light"
+
 //button animations 
 
 me = document.getElementById("me");
@@ -127,9 +129,14 @@ purchase.addEventListener('click', function(){
     document.getElementById("buttonClick").innerHTML = "<img src = './img/football.png' alt = 'Helmet' width = 100px, height = 100px>";
     document.getElementById("buttonClick2").innerHTML = "<h3>All Time Fantasy Football</h3>";
     document.getElementById("buttonClick3").innerHTML = "\
-    <a href= 'https://github.com/MGibson7/ALLTIMEFANTASY' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
-                        <a href= './video/FantasyTrading.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
-    document.getElementById("buttonClick4").innerHTML = "<p>Fantasy football trading card game that assigns you a random player from a random year and then it's up to you to accept or reject a trade offer for them.</p>\
+    <a href= 'https://github.com/MGibson7/ALLTIMEFANTASY' target='_blank' rel='noopener noreferrer'><button id = source1>SOURCE CODE</button></a>\
+                        <a href= './video/FantasyTrading.mp4'target='_blank' rel='noopener noreferrer'><button id = demo1>LIVE DEMO</button></a>";
+    if (mode_type == "dark"){
+      demo = document.getElementById("buttonClick3").innerHTML
+      document.getElementById("buttonClick3").innerHTML = `${demo} <style>button{background-image: linear-gradient(#121212, teal, #121212)}`
+      
+    }
+      document.getElementById("buttonClick4").innerHTML = "<p>Fantasy football trading card game that assigns you a random player from a random year and then it's up to you to accept or reject a trade offer for them.</p>\
     <p>HTML, CSS, JAVASCRIPT, PYTHON, DJANGO</p>";
     
   }
@@ -149,6 +156,11 @@ purchase.addEventListener('click', function(){
       document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/ViasatMovingAvgs' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/viasatmoving.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+      if (mode_type == "dark"){
+      demo = document.getElementById("buttonClick3").innerHTML
+      document.getElementById("buttonClick3").innerHTML = `${demo} <style>button{background-image: linear-gradient(#121212, teal, #121212)}`
+      
+    }
       document.getElementById("buttonClick4").innerHTML = "Program to scrape data off company site to provide an indepth report of the 90 day, 60 day, 30 day, and\
        15 day moving averages (normalized for a 30 day period). This was utilized to optimize equipment ordering and save on shipping costs/avoid out of stock reschedules. \
        <p>PYTHON, SELENIUM, SEABORN, MATPLOTLIB</p>";
@@ -170,6 +182,11 @@ purchase.addEventListener('click', function(){
         document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/RockPaperScissorsJava' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/RockPaperScissorsJava.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+        if (mode_type == "dark"){
+      demo = document.getElementById("buttonClick3").innerHTML
+      document.getElementById("buttonClick3").innerHTML = `${demo} <style>button{background-image: linear-gradient(#121212, teal, #121212)}`
+      
+    }
         document.getElementById("buttonClick4").innerHTML = "Program that utilizes JavaScript to allow a user to play rock-paper-scissors against the computer in first to 5 matches and keeps track of titles won.  \
                         <p>JAVASCRIPT, HTML, CSS</p>";
         
@@ -190,6 +207,11 @@ purchase.addEventListener('click', function(){
         document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/StockCorrelation' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/stockcorrelation.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+        if (mode_type == "dark"){
+      demo = document.getElementById("buttonClick3").innerHTML
+      document.getElementById("buttonClick3").innerHTML = `${demo} <style>button{background-image: linear-gradient(#121212, teal, #121212)}`
+      
+    }
         document.getElementById("buttonClick4").innerHTML = "Program to identify the degree to which two stocks have historically been correlated. Also predicts what price of \
         dependent stock should be given X price of independent stock. Can be utilized to identify potential stock arbitrage in sectors.   \
                         <p>PYTHON, SELENIUM, LINEAR REGRESSION, MATPLOTLIB, SEABORN</p>";
@@ -210,6 +232,11 @@ purchase.addEventListener('click', function(){
             document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/FFLTechInvoiceMaker' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/ViasatInvoicing.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+            if (mode_type == "dark"){
+              demo = document.getElementById("buttonClick3").innerHTML
+              document.getElementById("buttonClick3").innerHTML = `${demo} <style>button{background-image: linear-gradient(#121212, teal, #121212)}`
+      
+           }
             document.getElementById("buttonClick4").innerHTML = "Program that scrapes completed job data from company site and compiles it into a word document invoice based on the inputted tech name and \
             specified date range \
                                         <p>PYTHON, SELENIUM</p>";
@@ -232,6 +259,11 @@ purchase.addEventListener('click', function(){
               document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/SMALLBIZAUTOMATION-JunkintheTruck' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/JunkinTruckTexts.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+              if (mode_type == "dark"){
+      demo = document.getElementById("buttonClick3").innerHTML
+      document.getElementById("buttonClick3").innerHTML = `${demo} <style>button{background-image: linear-gradient(#121212, teal, #121212)}`
+      
+    }
               document.getElementById("buttonClick4").innerHTML = "Program that sends out text alerts of incoming job opportunities to vendors dependent on their criteria & ability \
                           <p>PYTHON, TWILIO</p>";
               
@@ -251,6 +283,11 @@ purchase.addEventListener('click', function(){
                 document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/ACDTVSQLQUERIES' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/ACDTVSQL2.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+                if (mode_type == "dark"){
+      demo = document.getElementById("buttonClick3").innerHTML
+      document.getElementById("buttonClick3").innerHTML = `${demo} <style>button{background-image: linear-gradient(#121212, teal, #121212)}`
+      
+    }
                 document.getElementById("buttonClick4").innerHTML = "SQL code for pulling total number of unique accounts and subsequent billing from large assortment of account data. \
                         Group unique accounts, sort by revenue, state, etc. Quick view of new accounts vs lost accounts. See overview of customer base differences month vs month.    \
                         <p>SQL</p>";
@@ -272,6 +309,11 @@ purchase.addEventListener('click', function(){
                   document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/UltimateFIREProgram' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/fire.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+                  if (mode_type == "dark"){
+      demo = document.getElementById("buttonClick3").innerHTML
+      document.getElementById("buttonClick3").innerHTML = `${demo} <style>button{background-image: linear-gradient(#121212, teal, #121212)}`
+      
+    }
                   document.getElementById("buttonClick4").innerHTML = "Program to forecast potential retirement savings with inputted variables \
                   (having a kid in X year, new home in X year at X price, wage increase/decrease, etc.)  \
                         <p>PYTHON</p>";
@@ -293,6 +335,11 @@ purchase.addEventListener('click', function(){
                     document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/ACAddTechContactInfo' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/addcontactinfovia.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+                    if (mode_type == "dark"){
+      demo = document.getElementById("buttonClick3").innerHTML
+      document.getElementById("buttonClick3").innerHTML = `${demo} <style>button{background-image: linear-gradient(#121212, teal, #121212)}`
+      
+    }
                     document.getElementById("buttonClick4").innerHTML = "Program designed to automate the notation process of adding the technician's contact information on work order notes. \
                     Program uses selenium and adds phone number of corresponding tech that is assigned to that work order.   \
                               <p>PYTHON SELENIUM</p>";
@@ -314,6 +361,11 @@ purchase.addEventListener('click', function(){
                       document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/ACViasatSQL' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/ViasatSQL.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+                      if (mode_type == "dark"){
+      demo = document.getElementById("buttonClick3").innerHTML
+      document.getElementById("buttonClick3").innerHTML = `${demo} <style>button{background-image: linear-gradient(#121212, teal, #121212)}`
+      
+    }
                       document.getElementById("buttonClick4").innerHTML = "SQL code for combining Viasat workorders with their corresponding payment voucher. Comparing month vs month and for viewing tech, \
                       region, or work order type specific performance.    \
                       <p>SQL</p>";
@@ -335,6 +387,11 @@ purchase.addEventListener('click', function(){
                         document.getElementById("buttonClick3").innerHTML = "\
     <a href= 'https://github.com/MGibson7/draftkingslineupbuilder' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                         <a href= './video/draftkings.mp4'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+                        if (mode_type == "dark"){
+                          demo = document.getElementById("buttonClick3").innerHTML
+                          document.getElementById("buttonClick3").innerHTML = `${demo} <style>button{background-image: linear-gradient(#121212, teal, #121212)}`
+                          
+                        }
                         document.getElementById("buttonClick4").innerHTML = "Program to build draftkings lineups (user sets the number of attempts and feeds in excel file \
                           with point projection or player scores).\
                          Program outputs top ones onto a Word Document with corresponding lineup score.     \
@@ -358,6 +415,11 @@ purchase.addEventListener('click', function(){
                           document.getElementById("buttonClick3").innerHTML = "\
       <a href= 'https://github.com/MGibson7/etchasketch' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                           <a href= 'https://mgibson7.github.io/etchasketch/'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+                          if (mode_type == "dark"){
+                            demo = document.getElementById("buttonClick3").innerHTML
+                            document.getElementById("buttonClick3").innerHTML = `${demo} <style>button{background-image: linear-gradient(#121212, teal, #121212)}`
+                            
+                          }
                           document.getElementById("buttonClick4").innerHTML = "Program to mimic an Etch A Sketch utilizing DOM Manipulation via JavaScript \
                                 \
                         <p>JAVASCRIPT</p>";
@@ -379,6 +441,11 @@ purchase.addEventListener('click', function(){
                             document.getElementById("buttonClick3").innerHTML = "\
         <a href= 'https://github.com/MGibson7/calculator' target='_blank' rel='noopener noreferrer'><button>SOURCE CODE</button></a>\
                             <a href= 'https://mgibson7.github.io/Calculator/'target='_blank' rel='noopener noreferrer'><button>LIVE DEMO</button></a>";
+                            if (mode_type == "dark"){
+                              demo = document.getElementById("buttonClick3").innerHTML
+                              document.getElementById("buttonClick3").innerHTML = `${demo} <style>button{background-image: linear-gradient(#121212, teal, #121212)}`
+                              
+                            }
                             document.getElementById("buttonClick4").innerHTML = "Utilizing JS functions and DOM manipulation to produce a calculator \
                                   \
                           <p>JAVASCRIPT</p>";
@@ -392,3 +459,59 @@ purchase.addEventListener('click', function(){
                         
                         
                         });
+let mode = document.getElementById("mode");
+let avatar = document.getElementById("avatar");
+let projects = document.getElementById("projects");
+let projects1 = document.getElementById("projects1");
+let working = document.getElementById("work");
+let schooling = document.getElementById("school");
+let projectView = document.getElementById("projectView")
+let skillz = document.getElementById("skills")
+let totalProjects = 13;
+let buttonz = document.getElementById("buttonClick3")
+
+mode.addEventListener('click', event => {
+  if (mode_type == "light"){
+    mode.textContent = "Click for Light Mode";
+    mode.style.backgroundImage = "linear-gradient(#121212, teal, #121212)"
+    avatar.style.backgroundImage = "linear-gradient(#121212, teal, #121212)"
+    document.body.style.backgroundImage = "linear-gradient(#121212, teal, #121212)"
+    projects.style.backgroundImage = "linear-gradient(#121212, teal, #121212)"
+    projects1.style.backgroundImage = "linear-gradient(#121212, teal, #121212)"
+    working.style.backgroundImage = "linear-gradient(#121212, teal, #121212)"
+    schooling.style.backgroundImage = "linear-gradient(#121212, teal, #121212)"
+    projectview.style.backgroundImage = "linear-gradient(#121212, teal, #121212)"
+    skillz.style.backgroundImage = "linear-gradient(#121212, teal, #121212)"
+    let currentBut = buttonz.innerHTML
+    buttonz.innerHTML = `${currentBut} <style>button{background-image: linear-gradient(#121212, teal, #121212)}`
+    document.getElementById("purchase").style.backgroundImage = "linear-gradient(#121212, teal, #121212)"
+    for (i = 2; i < totalProjects + 1; i++){
+      document.getElementById(`purchase${i}`).style.backgroundImage = "linear-gradient(#121212, teal, #121212)"
+    };   
+    mode_type = "dark";
+
+  }
+  else{
+    mode.textContent = "Click for Dark Mode";
+    mode.style.backgroundImage = "linear-gradient(teal, lightblue, aqua)"
+    avatar.style.backgroundImage = "linear-gradient(teal, lightblue, aqua)"
+    document.body.style.backgroundImage = "linear-gradient(teal, lightblue, aqua)"
+    projects.style.backgroundImage = "linear-gradient(teal, lightblue, aqua)"
+    projects1.style.backgroundImage = "linear-gradient(teal, lightblue, aqua)"
+    working.style.backgroundImage = "linear-gradient(teal, lightblue, aqua)"
+    schooling.style.backgroundImage = "linear-gradient(teal, lightblue, aqua)"
+    projectview.style.backgroundImage = "linear-gradient(teal, lightblue, aqua)"
+    skillz.style.backgroundImage = "linear-gradient(teal, lightblue, aqua)"
+    let currentBut = buttonz.innerHTML
+    buttonz.innerHTML = `${currentBut} <style>button{background-image: linear-gradient(teal, lightblue, aqua)}`
+    document.getElementById("purchase").style.backgroundImage = "linear-gradient(teal, lightblue, aqua)"
+    for (i = 2; i < totalProjects + 1; i++){
+      document.getElementById(`purchase${i}`).style.backgroundImage = "linear-gradient(teal, lightblue, aqua)"
+    };   
+    mode_type = "light";
+
+  }
+
+  
+
+})
